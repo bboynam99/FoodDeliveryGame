@@ -8,6 +8,11 @@ Metaverse Food Delivery Multiplayer Game with Web3 Features
 * Testnet balance in account
 * Play from Desktop or Laptop only
 
+## Sepolia
+* Token : 0xA9AFd7868C23a87363e43534a27661699edA5841
+* NFT1155: 0xeFcD6a14975F01528A997ae5954bb9f7A4Dcd02C
+* Random:0x69c8a29Dfb705F9B7c3C2c78cE1688C7e49f9587
+
 ## Features
 - Realistic Food Delivery System
 - Single and Multiplayer mode with Voice chat support

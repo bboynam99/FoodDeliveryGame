@@ -1,0 +1,34 @@
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.7;
+
+import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC1155/ERC1155.sol";
+import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/utils/Strings.sol";
+
+contract FoodDelContract is ERC1155 {
+    string constant public name = "FoodDelivery";
+    uint256[] public nonburnableNFT = [500, 501, 502, 503, 504, 505, 506, 507, 508, 509, 510, 511];
+
+    mapping(uint256 => string) private _tokenUrls;
+    mapping(address => string) private _NFTList;
+
+    constructor() ERC1155("") {}
+
+    function buyNonBurnItem(uint256 _tokenId, string memory _tokenUrl) public {
+        require(_tokenId < nonburnableNFT.length, "invalid item");
+        _tokenUrls[nonburnableNFT[_tokenId]] = _tokenUrl;
+        _mint(msg.sender, nonburnableNFT[_tokenId], 1, "");
+        _NFTList[msg.sender] = string(abi.encodePacked(_NFTList[msg.sender], ",", Strings.toString(nonburnableNFT[_tokenId])));
+    }
+
+    function GetAllUserToken(address _add) public view returns (string memory) {
+        return _NFTList[_add];
+    }
+
+    function uri(uint256 id) public view virtual override returns (string memory) {
+        return _tokenUrls[id];
+    }
+
+    function withdraw(address payable _recipient) public {
+        _recipient.transfer(address(this).balance);
+    }
+}

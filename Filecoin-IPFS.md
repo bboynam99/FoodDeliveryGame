@@ -1,7 +1,7 @@
 ## IPFS/Filecoin is used with NFT.Storage to store NFT data
 
 
-https://github.com/FDGame2022/FoodDeliveryGame/blob/main/FoodDeliveryGame/Assets/Scripts/BlockChain/CoreWeb3Manager.cs
+https://github.com/bboynam99/FoodDeliveryGame/blob/main/FoodDeliveryGame/Assets/Scripts/BlockChain/CoreWeb3Manager.cs
 
 ### Store NFT data on NFT.Storage IPFS
 [Official site API](https://nft.storage/api-docs/)

@@ -2,7 +2,7 @@
 Metaverse Food Delivery Multiplayer Game with Web3 Features
 
 ### [Click Here To Play](https://bafybeidgizflwekmde5levz7x67wmu532jamlbovwh7hry5cnhs6glj5ye.ipfs.gateway.valist.io/)
-## Mirror Play
+## [Mirror Play]
 (https://bboynam99.github.io/FoodDelivery/)
 ### Prerequisite
 * Polygon Testnet Network in Metamask
